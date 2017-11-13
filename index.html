@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj8zMbrx7fXAhVMylQKHVnxAOsQjRwIBw&url=http%3A%2F%2Fkellerelementary.weebly.com%2Fcoding.html&psig=AOvVaw1EwNsajSb8fdracKIQoj-F&ust=1510525418605370">
-        <h1>Sricharan Guddanti</h1>
-        <p>I'm in 9th grade, and I have an interest in coding.</p>
+        <img src="http://kellerelementary.weebly.com/uploads/2/5/7/9/25792133/coding.jpg">
+        <h1>The Top 5 In Everything</h1>
+        <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Sports')">Sports</button>
+  <button class="tablinks" onclick="openCity(event, 'People')">People</button>
+  <button class="tablinks" onclick="openCity(event, 'Everyday')">Everyday</button>
+  <button class="tablinks" onclick="openCity(event, 'Other')">Other</button>
+</div>
+
+<div id="Sports" class="tabcontent">
+  <h3>Sports</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="People" class="tabcontent">
+  <h3>People</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Everyday" class="tabcontent">
+  <h3>Everyday</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+        <script id="openCity">
+function openCity() {
+   document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
     </body>
 </html>
